@@ -1,0 +1,40 @@
+//Breakpoint mixin
+// $width - Size of screen
+// $type - min or max, default is min
+@mixin breakpoint($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+// ==========================================================================
+// Usage
+// ==========================================================================
+// .navbar {
+//   display: flex;
+//   flex-direction: column;
+
+//   @include breakpoint(sm) {
+//     flex-direction: row;
+//   }
+// }
+
+// ==========================================================================
+// Generated CSS
+// ==========================================================================
+// @media only screen and (min-width: 768px) {
+//   .nav {
+//     background-color: teal;
+//   }
+// }
+// @media only screen and (max-width: 767px) {
+//   .menu {
+//     display: flex;
+//   }
+// }
