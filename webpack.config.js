@@ -20,7 +20,8 @@ module.exports = (env) => {
       filename: 'js/script.js'
     },
     devServer: {
-      contentBase: './dist'
+      contentBase: './dist',
+      hot: true
     },
     /*Loaders*/
     module: {

@@ -1,4 +1,11 @@
-# Scalable SASS Architecture
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/37225cae-31ba-40cd-bc1b-db2e8768445c/deploy-status)](https://app.netlify.com/sites/happy-bartik-dbcf7b/deploys)
+
+
+visit [happy-bartik-dbcf7b.netlify.app/](https://happy-bartik-dbcf7b.netlify.app/) for the live preview.
+
+<!-- # Scalable SASS Architecture
 
 ## Prerequisites
 
@@ -45,4 +52,4 @@ Prettify files:
 
 ```bash
 yarn prettier
-```
+``` -->

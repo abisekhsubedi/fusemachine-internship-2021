@@ -10,7 +10,7 @@
     "prettier": "prettier --write src/"
   },
   "repository": "https://github.com/kcsuraj/Scalable-SASS-Architecture.git",
-  "author": "Suraj kc",
+  "author": "Abisekh Subedi",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
