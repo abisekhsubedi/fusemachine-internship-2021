@@ -29,9 +29,9 @@
 // ==========================================================================
 @import 'components/button';
 @import 'components/checkbox';
+@import 'components/navbar';
+@import 'components/hero';
 
-.banner {
-  height: 500px;
-  background-color: teal;
-  @include slanted-edge(after, false, 3deg);
+body {
+  background: $secondary;
 }

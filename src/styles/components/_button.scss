@@ -17,7 +17,7 @@
   display: inline-block;
   cursor: pointer;
   border: 0;
-  border-radius: 3px;
+  border-radius: 8px;
   text-align: center;
   white-space: nowrap;
 
@@ -30,12 +30,17 @@
   }
 
   &.button-primary {
-    @include button-size(10px, 24px, 14px);
-    @include button-variant(color(primary, base), color(primary, white));
+    @include button-size(8px, 12px, 16px);
+    background: rgba(38, 166, 154, 1);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding-top: 11px;
   }
 
   &.button-success {
-    @include button-size(10px, 24px, 14px);
+    @include button-size(12px, 24px, 14px);
     @include button-variant(color(sec, success), color(primary, white));
   }
 

@@ -26,7 +26,7 @@ $palette: (
 //  $color - map vaue
 //  $tone - key of map value
 @function color($color, $tone) {
-  @warn map-get($palette,$color);
+  @warn map-get($palette, $color);
 
   @if map-has-key($palette, $color) {
     $color: map-get($palette, $color);
@@ -50,3 +50,6 @@ $palette: (
 // .navbar {
 //   background-color: color(gray, base);
 // }
+$primary: rgba(63, 81, 181, 1);
+$secondary: #e5e5e5;
+$gradient: linear-gradient(180deg, rgba(22, 101, 216, 0.47017) 0%, #1665d8 100%);

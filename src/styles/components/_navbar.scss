@@ -1,0 +1,43 @@
+nav {
+  background: $primary;
+  padding: $mx;
+  height: $bl;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 24px;
+}
+
+.nav-icon {
+  display: flex;
+  gap: 16px;
+
+  img {
+    padding: $s $s;
+    border-radius: $xs;
+    cursor: pointer;
+
+    //   width: $m;
+    //   height: $m;
+    &:nth-of-type(2):hover {
+      background: lighten($primary, 15%);
+    }
+  }
+}
