@@ -3,14 +3,15 @@ footer {
   color: $black;
   margin: 0 120px $l;
   padding-top: $m;
-  text-align: center;
+  text-align: left;
   border-top: 2px solid #bbbbbb;
 
   p {
     padding: 8px 0;
+    line-height: 1.5;
 
     &:nth-child(2) {
-      font-size: 16px;
+      font-size: 14px;
       color: $text;
     }
   }
