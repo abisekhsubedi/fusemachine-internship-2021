@@ -23,13 +23,13 @@
   background: white;
   //   height: 24rem;
   //   width: 24rem;
-  border-radius: $m;
-  box-shadow: 0 16px 46px rgba(24, 24, 24, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 1px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
   transition: box-shadow 0.2s linear;
   color: $text;
 
   &:hover {
-    box-shadow: 0 24px 46px rgba(24, 24, 24, 0.5);
+    box-shadow: 0 6px 16px rgba(24, 24, 24, 0.05);
     transition: box-shadow 0.3s linear;
     cursor: pointer;
   }
@@ -43,7 +43,7 @@
 
   h2 {
     font-weight: 600;
-    margin-bottom: $mx;
+    margin-bottom: $m;
     color: $black;
   }
 
@@ -69,12 +69,17 @@
       gap: 16px;
 
       img {
-        width: 22px;
+        width: 24px;
       }
+
       p {
         margin-bottom: 0;
         color: $text;
       }
+    }
+    .cards__info--download img {
+      width: 20px;
+      // background: #000;
     }
   }
 }

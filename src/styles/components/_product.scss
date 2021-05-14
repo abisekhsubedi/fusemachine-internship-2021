@@ -23,10 +23,11 @@
   border-radius: 50%;
   padding: 20px;
   cursor: pointer;
+  overflow: hidden;
 
   img {
     border-radius: 0;
-    // width: 80px;
+    width: 120px;
   }
 }
 
@@ -67,7 +68,7 @@
       width: 100%;
       min-width: 288px;
       border: 0;
-      border-radius: 8px;
+      border-radius: 4px;
       padding-left: 44px;
 
       &::placeholder {
