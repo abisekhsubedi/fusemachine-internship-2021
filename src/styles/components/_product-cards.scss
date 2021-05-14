@@ -1,0 +1,44 @@
+.product__cards {
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 2fr;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $s $m;
+  background: white;
+  height: 24rem;
+  width: 24rem;
+  border-radius: $m;
+  box-shadow: 0 16px 46px rgba(24, 24, 24, 0.3);
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: $mx;
+  }
+
+  p {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: $mx;
+  }
+
+  .cards__info {
+    padding: $s;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+
+    .card__info--time,
+    .card__info--download {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+}
