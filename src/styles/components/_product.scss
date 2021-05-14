@@ -35,8 +35,12 @@
 
   p {
     font-size: 12px;
+    // font-weight: bold;
     margin-bottom: 8px;
     color: $text;
+  }
+  h2 {
+    font-weight: 600;
   }
 }
 
