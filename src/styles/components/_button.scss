@@ -37,6 +37,12 @@
     text-transform: uppercase;
     letter-spacing: 0.9px;
     padding-top: 11px;
+    transition: 0.1s linear;
+
+    &:hover {
+      background: darken($btn-color, 5%);
+      transition: 0.2s linear;
+    }
   }
 
   &.button-success {

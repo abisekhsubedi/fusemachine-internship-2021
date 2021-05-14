@@ -25,7 +25,14 @@
   //   width: 24rem;
   border-radius: $m;
   box-shadow: 0 16px 46px rgba(24, 24, 24, 0.3);
+  transition: box-shadow 0.2s linear;
   color: $text;
+
+  &:hover {
+    box-shadow: 0 24px 46px rgba(24, 24, 24, 0.5);
+    transition: box-shadow 0.3s linear;
+    cursor: pointer;
+  }
 
   > img {
     width: 64px;

@@ -8,6 +8,7 @@
   position: relative;
   top: -86px;
   z-index: 2;
+  transition: margin 0.2s ease-in;
 }
 
 .info__container {
@@ -21,6 +22,7 @@
   width: fit-content;
   border-radius: 50%;
   padding: 20px;
+  cursor: pointer;
 
   img {
     border-radius: 0;
