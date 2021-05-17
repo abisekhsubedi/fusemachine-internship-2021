@@ -13,7 +13,6 @@ module.exports = (env) => {
     const isProduction = env.production ? true : false;
     const envType = isProduction ? 'production' : 'development';
 
-    // you don't have to do this in webpack 5 but stay with don't break it
     return {
         mode: envType,
         entry: ['./src/app.js'],
@@ -24,12 +23,12 @@ module.exports = (env) => {
         /*Loaders*/
         module: {
             rules: [
-                // for loading css, use style-loader while in production
+                // css
                 {
                     test: /\.css$/,
                     use: 'css-loader'
                 },
-                // for loading scss file
+                // scss
                 {
                     test: /\.scss$/,
                     use: [
@@ -39,7 +38,7 @@ module.exports = (env) => {
                         'sass-loader'
                     ]
                 },
-                // for loading images
+                // images
                 {
                     test: /\.(png|svg|jpg|gif)$/,
                     use: [{
@@ -51,13 +50,13 @@ module.exports = (env) => {
                         }
                     }]
                 },
-                // for loading babel to for new JS syntax to work
+                // javascript
                 {
                     test: /\.js$/,
                     exclude: '/node_modules/',
                     use: ['babel-loader']
                 },
-                // for loading fonts
+                //fonts
                 {
                     test: /\.(woff|woff2|eot|ttf|otf)$/,
                     use: [{
@@ -122,6 +121,7 @@ module.exports = (env) => {
                 new OptimizeCSSAssetsPlugin({})
             ]
         },
+        // dev server
         devServer: {
             contentBase: './dist',
             hot: true

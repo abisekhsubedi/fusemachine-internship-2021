@@ -16,7 +16,66 @@
 
   <body>
     <main>
-      hello
+      <!-- sign up -->
+      <div class="sign-up">
+        <!-- sign-up text content starts -->
+        <section class="sign-up__text-container">
+          <div>
+            <button class="button button-label" role="button"><span> &larr; </span>Go back</button>
+            <button class="button button-label" role="button">
+              Have an account? <a class="sign-up__link">sign in</a>
+            </button>
+          </div>
+          <!-- sign up header text starts -->
+          <div>
+            <h1>Sign up to Brainalityca</h1>
+            <p>Sign up on the internal platform</p>
+          </div>
+          <!-- sign up header text ends -->
+          <!-- sign up form starts-->
+          <form class="sign-up__form" action="/success.html" method="POST">
+            <input type="text" class="first-name" placeholder="First Name" aria-required="true" required />
+            <input type="text" class="manea" placeholder="manea" aria-required="true" required />
+            <input type="email" class="email" placeholder="Email Address" aria-required="true" required />
+            <input type="password" class="password" placeholder="Password" aria-required="true" required />
+
+            <div class="sign-up__terms">
+              <input type="checkbox" name="terms-conditions" /> <span>I have read the &nbsp; </span>
+              <a href="#" class="sign-up__link"> terms and condition</a>
+            </div>
+            <button type="submit" class="button button-sign-up">sign up now</button>
+          </form>
+          <!-- sign up form ends -->
+        </section>
+        <!-- sign-up text content ends -->
+
+        <!-- sign-up image start -->
+        <section class="sign-up__img-container">
+          <img
+            class="sign-up__image"
+            src=" images/sign-up-image.png"
+            alt="sign up image on the right section, not clickable"
+          />
+          <div class="img--overlay"></div>
+          <div class="sign-up__rand-post">
+            <h2></h2>
+
+            <div class="sign-up__text">
+              <div>
+                <p>Hella narwhal Cosby sweater McSweeney's, salvia kitsch before they sold out High Life.</p>
+              </div>
+              <div>
+                <img src="images/user-profile-img.png" alt="random person profile picture" />
+                <div>
+                  <p>Takamaryo ayako</p>
+                  <p>Manager @ inVision</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- sign-up image ends -->
+      </div>
     </main>
   </body>
 </html>

@@ -45,6 +45,27 @@
     }
   }
 
+  &.button-label {
+    font: inherit;
+    font-size: 14px;
+    background: #ffffff;
+  }
+
+  &.button-sign-up {
+    color: $white;
+    width: 360px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    background: $btn-sign-up;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
   &.button-success {
     @include button-size(12px, 24px, 14px);
     @include button-variant(color(sec, success), color(primary, white));
