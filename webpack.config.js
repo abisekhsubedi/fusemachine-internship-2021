@@ -89,9 +89,9 @@ module.exports = (env) => {
                 title: 'Fusemachine assignment'
             }),
             new HtmlWebpackPlugin({
-                filename: 'account.html',
-                template: './src/templates/'
-            })
+                filename: 'settings.html',
+                template: './src/templates/settings.html'
+            }),
             new CopyWebpackPlugin([{
                 from: 'src/templates',
                 to: ''
