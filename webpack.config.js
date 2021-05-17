@@ -9,9 +9,11 @@ const webpack = require('webpack');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 module.exports = (env) => {
+
     const isProduction = env.production ? true : false;
     const envType = isProduction ? 'production' : 'development';
 
+    // you don't have to do this in webpack 5 but stay with don't break it
     return {
         mode: envType,
         entry: ['./src/app.js'],
@@ -19,16 +21,15 @@ module.exports = (env) => {
             path: path.resolve(__dirname, 'dist'),
             filename: 'js/script.js'
         },
-        devServer: {
-            contentBase: './dist',
-            hot: true
-        },
         /*Loaders*/
         module: {
-            rules: [{
+            rules: [
+                // for loading css, use style-loader while in production
+                {
                     test: /\.css$/,
                     use: 'css-loader'
                 },
+                // for loading scss file
                 {
                     test: /\.scss$/,
                     use: [
@@ -38,6 +39,7 @@ module.exports = (env) => {
                         'sass-loader'
                     ]
                 },
+                // for loading images
                 {
                     test: /\.(png|svg|jpg|gif)$/,
                     use: [{
@@ -49,11 +51,13 @@ module.exports = (env) => {
                         }
                     }]
                 },
+                // for loading babel to for new JS syntax to work
                 {
                     test: /\.js$/,
                     exclude: '/node_modules/',
                     use: ['babel-loader']
                 },
+                // for loading fonts
                 {
                     test: /\.(woff|woff2|eot|ttf|otf)$/,
                     use: [{
@@ -67,16 +71,27 @@ module.exports = (env) => {
                 }
             ]
         },
+        // plugins
         plugins: [
             new MiniCssExtractPlugin({
                 filename: 'css/[name].css'
             }),
             new CleanWebpackPlugin(['dist']),
+            // htmlwebpackplugin
             new HtmlWebpackPlugin({
                 filename: 'index.html',
                 template: './src/templates/index.html',
-                title: 'Scalable Sass Architecture'
+                title: 'Fusemachine assignment'
             }),
+            new HtmlWebpackPlugin({
+                filename: 'login.html',
+                template: './src/templates/login.html',
+                title: 'Fusemachine assignment'
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'account.html',
+                template: './src/templates/'
+            })
             new CopyWebpackPlugin([{
                 from: 'src/templates',
                 to: ''
@@ -93,6 +108,7 @@ module.exports = (env) => {
                 to: 'images/[path][name].[ext]'
             }])
         ],
+        // optimization
         optimization: {
             minimizer: [
                 new UglifyJsPlugin({
@@ -105,6 +121,10 @@ module.exports = (env) => {
                 }),
                 new OptimizeCSSAssetsPlugin({})
             ]
-        }
+        },
+        devServer: {
+            contentBase: './dist',
+            hot: true
+        },
     };
 };
