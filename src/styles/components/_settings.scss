@@ -1,0 +1,120 @@
+.dashboard {
+  height: calc(100vh - 64px);
+  display: flex;
+  justify-content: space-between;
+
+  //======================
+  // aside | side bar
+  // ===================
+  &__sidebar {
+    a {
+      color: rgba(102, 120, 138, 1);
+    }
+
+    width: 270px;
+    background: white;
+    // outline: 5px solid plum;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__profile-wrapper {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid #e4e7eb;
+
+    & > img {
+      width: 100px;
+    }
+  }
+
+  &__profile-text {
+    p:first-child {
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height, or 125% */
+
+      text-align: center;
+      letter-spacing: -0.05px;
+
+      color: #3a3b3f;
+      margin-bottom: 4px;
+    }
+
+    p:last-child {
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 133% */
+
+      text-align: center;
+
+      color: #9ea0a5;
+    }
+  }
+
+  &__nav {
+    padding: 24px 32px;
+    border-bottom: 1px solid #e4e7eb;
+
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+
+    img {
+      width: 24px;
+    }
+  }
+
+  &__support {
+    padding: 24px 32px;
+
+    h2 {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 15px;
+
+      color: rgba(0, 0, 0, 0.328974);
+    }
+
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+  }
+
+  //======================
+  //dashboard container
+  // ===================
+  &__container {
+    padding: 0 24px;
+    width: 100%;
+    background: $secondary;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    & > * {
+      outline: 4px solid darkcyan;
+    }
+  }
+
+  &__horizontal-nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
