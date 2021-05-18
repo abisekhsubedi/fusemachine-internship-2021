@@ -1,0 +1,12 @@
+.dropdown {
+  display: none;
+  height: 50vh;
+  position: absolute;
+  padding: 4px;
+  background: white;
+  overflow-y: scroll;
+
+  li {
+    padding: 12px;
+  }
+}

@@ -28,6 +28,7 @@ nav {
 .nav-icon {
   display: flex;
   gap: 16px;
+  position: relative;
 
   img {
     padding: $s $s;
