@@ -295,12 +295,36 @@
     padding: 32px 24px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
     border-bottom: 1px solid #e4e7eb;
 
     & > div {
       display: flex;
       gap: 24px;
+    }
+
+    span {
+      width: 100%;
+
+      label {
+        padding-left: 16px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: 0.4px;
+
+        color: #1665d8;
+
+        opacity: 0;
+        transition: opacity 0.3s linear;
+      }
+
+      input:focus + label {
+        opacity: 1;
+        transition: opacity 0.3s linear;
+      }
     }
   }
 
@@ -364,20 +388,43 @@
 
     .col-b {
       flex-direction: row;
-      align-items: center;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 8px;
+      // flex-wrap: wrap;
       margin-bottom: 16px;
       // background: #000;
-    }
 
-    span {
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
-      /* identical to box height, or 150% */
+      & > .email {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
 
-      letter-spacing: 0.15px;
+        & > span {
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          /* identical to box height */
+          color: #66788a;
+          opacity: 0;
+          transition: opacity 0.3s linear;
+        }
 
-      color: rgba(0, 0, 0, 0.6);
+        & > label {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          /* identical to box height, or 150% */
+          letter-spacing: 0.15px;
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+
+      input:checked + .email > span {
+        opacity: 1;
+        transition: opacity 0.3s linear;
+      }
     }
   }
 
