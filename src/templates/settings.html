@@ -95,7 +95,7 @@
                 <p>Rm. Valcea, Romania</p>
                 <p>4:32PM (GMT-4)</p>
               </div>
-              <img src="#" alt="" />
+              <img src="./images/profile-anrian.png" alt="" />
             </section>
 
             <!-- dashboard CTA buttons -->
@@ -108,55 +108,67 @@
           <!-- dashboard 2 setting form -->
           <div class="dashboard__setting-form">
             <section class="dashboard__basic-profile">
-              <h2 class="dashboard__heading-text">
+              <h2 class="dashboard__heading-title">
                 Basic Profile
                 <span class="dashboard__heading-subtitle">The information can be edited from your profile page</span>
               </h2>
-              <form action="/">
-                <div>
-                  <input type="text" placeholder="First Name" />
-                  <input type="text" placeholder="Last Name" />
-                </div>
-                <div>
-                  <input type="email" name="" id="" placeholder="adrian_shp@yahoo.com" />
-                  <input type="tel" name="" id="" placeholder="0796654433" />
-                </div>
-                <div><input type="text" /><input type="text" /></div>
+              <form class="dashboard__form" action="/">
+                <section class="dashboard__profile-form">
+                  <div>
+                    <input type="text" placeholder="First Name" />
+                    <input type="text" placeholder="Last Name" />
+                  </div>
+                  <div>
+                    <input type="email" name="" id="" placeholder="adrian_shp@yahoo.com" />
+                    <input type="tel" name="" id="" placeholder="0796654433" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="First Name" />
+                    <input type="text" placeholder="Last Name" />
+                  </div>
+                </section>
+
                 <button type="submit" class="dashboard--save-cta-1">save settings</button>
               </form>
             </section>
             <!-- notifications starts  -->
             <section class="dashboard__notifications-setting">
               <!-- notifcations heeading text starts -->
-              <h2 class="dashboard__heading-text">
+              <h2 class="dashboard__heading-title">
                 Notifications <span class="dashboard__heading-subtitle">Mange the notifications emailing</span>
               </h2>
               <!-- notifcations heeading text ends -->
               <!-- notification checkbox starts -->
               <form
+                class="dashboard__form"
                 action="
                         "
               >
-                <!-- column one -->
-                <div class="dashboard__col-1">
-                  <h2>Notifications</h2>
-                  <div>
-                    <input type="checkbox" name="" id="" /> <span>Email</span> <input type="checkbox" name="" id="" />
-                    <span>Push notifications</span> <input type="checkbox" name="" id="" /> <span>Text messages</span>
-                    <input type="checkbox" name="" id="" /> <span>Phone calls</span>
+                <section class="dashboard__notification-form">
+                  <!-- column one -->
+                  <div class="dashboard__col-1">
+                    <h2>Notifications</h2>
+                    <div>
+                      <input type="checkbox" name="" id="" /> <span>Email</span>
+                      <input type="checkbox" name="" id="" /> <span>Push notifications</span>
+                      <input type="checkbox" name="" id="" />
+                      <span>Text messages</span>
+                      <input type="checkbox" name="" id="" /> <span>Phone calls</span>
+                    </div>
                   </div>
-                </div>
-
-                <!-- column two -->
-                <div class="dashboard__col-2">
-                  <h2>Messages</h2>
-                  <div>
-                    <input type="checkbox" name="" id="" /> <span>Email</span> <input type="checkbox" name="" id="" />
-                    <span>Push notifications</span> <input type="checkbox" name="" id="" /> <span>Text messages</span>
-                    <input type="checkbox" name="" id="" /> <span>Phone calls</span>
+                  <!-- column two -->
+                  <div class="dashboard__col-2">
+                    <h2>Messages</h2>
+                    <div>
+                      <input type="checkbox" name="" id="" /> <span>Email</span>
+                      <input type="checkbox" name="" id="" /> <span>Push notifications</span>
+                      <input type="checkbox" name="" id="" />
+                      <span>Text messages</span>
+                      <input type="checkbox" name="" id="" /> <span>Phone calls</span>
+                    </div>
                   </div>
-                </div>
-                <button type="submit" class="dashboard--save-cta-2">save</button>
+                </section>
+                <button type="submit" class="dashboard--save-cta-1 dashboard--save-cta-2">save</button>
               </form>
             </section>
           </div>
