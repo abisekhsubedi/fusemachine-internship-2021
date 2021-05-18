@@ -19,6 +19,8 @@
   cursor: pointer;
   transition: opacity 0.1s linear;
 
+  &__header {
+  }
   &__text {
     position: absolute;
     top: 10%;
@@ -50,7 +52,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 16px 8px;
+    padding: 16px 0px;
     border-bottom: 1px solid rgba(63, 63, 68, 0.15);
   }
 
