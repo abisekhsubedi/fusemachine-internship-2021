@@ -39,8 +39,9 @@ nav {
       padding: $s $s;
     }
 
-    &:nth-of-type(2):hover {
-      background: lighten($primary, 15%);
+    &:hover {
+      // color: white;
+      background: darken($secondary, 5%);
       transition: border-radius 0.2s linear;
     }
   }

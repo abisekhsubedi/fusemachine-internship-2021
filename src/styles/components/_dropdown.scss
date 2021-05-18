@@ -1,12 +1,117 @@
+.btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .dropdown {
-  display: none;
   height: 50vh;
   position: absolute;
-  padding: 4px;
+  top: 40px;
+  left: -300px;
   background: white;
   overflow-y: scroll;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 1px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
+  padding: 6px;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+  transition: opacity 0.1s linear;
+
+  &__text {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    transform: translate(-10%, -20%);
+
+    h3 {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      /* identical to box height, or 143% */
+
+      letter-spacing: -0.04375px;
+
+      color: #3a3b3f;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 14px;
+      /* identical to box height */
+
+      color: #9ea0a5;
+    }
+  }
+
+  &__notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 8px;
+    border-bottom: 1px solid rgba(63, 63, 68, 0.15);
+  }
+
+  &__notify {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+
+    & > img {
+      background: rgba(250, 250, 250, 1);
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  &__notify-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    h1 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: #3a3b3f;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      /* identical to box height */
+
+      color: #9ea0a5;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    // width: 8px;
+    height: 10px;
+    background: #c7ced4;
+  }
 
   li {
-    padding: 12px;
   }
+
+  &__header img {
+    padding: 0 !important;
+  }
+}
+
+.nav-icon button:focus + .dropdown {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.1s linear;
 }
