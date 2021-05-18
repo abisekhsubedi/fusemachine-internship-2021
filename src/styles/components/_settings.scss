@@ -1,5 +1,4 @@
 .dashboard {
-  height: calc(100vh - 64px);
   display: flex;
   justify-content: space-between;
 
@@ -18,7 +17,6 @@
     // outline: 5px solid plum;
     display: flex;
     flex-direction: column;
-    height: 100%;
     box-shadow: 0px 0px 0px 1px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
   }
 
@@ -106,7 +104,7 @@
   //dashboard container
   // ===================
   &__container {
-    // padding: 0 24px;
+    padding-bottom: 24px;
     width: 100%;
     background: #f7f7f7;
     height: 100%;
@@ -145,7 +143,7 @@
 
   &__wrapper {
     display: flex;
-    gap: 28px;
+    gap: 24px;
     width: 100%;
     height: 100%;
     padding: 24px 0 0 24px;
@@ -157,6 +155,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 249px;
     width: 375px;
     box-shadow: 0px 0px 0px 1px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
@@ -164,7 +163,9 @@
   }
 
   &__profile-info {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     & > div {
@@ -322,14 +323,69 @@
     cursor: pointer;
   }
 
-  &__notification-form {
+  // =====================
+  // notification-form | checkbox
+  // ====================
+
+  &__notify-form {
+    padding: 24px 32px;
+    border-bottom: 1px solid #e4e7eb;
     display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+    // outline: 3px solid green;
+
+    input[type='checkbox'] {
+      width: 18px;
+      height: 18px;
+    }
   }
 
-  &--save-cta-2 {
+  &__col {
+    h2 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height, or 125% */
+
+      letter-spacing: -0.05px;
+
+      color: #3a3b3f;
+      margin-bottom: 24px;
+    }
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .col-b {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 16px;
+      // background: #000;
+    }
+
+    span {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+
+      letter-spacing: 0.15px;
+
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  // modifier CTA for saving
+  .save-cta-2 {
     color: #1665d8;
     background: white;
     box-shadow: none;
-    border: 1px solid rgba(98, 2, 238, 0);
+    // background: #000;
+    border: 1px solid rgba(0, 0, 0, 0.12);
   }
 }
