@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      <!-- <%=htmlWebpackPlugin.options.title%> -->
+    </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="todo">
+      <div class="todo__header">
+        <div class="todo__logo"></div>
+        <div class="todo__add-cta">
+          <div class="todo__container">
+            <input type="text" class="todo__type-item" placeholder="Add new ..." />
+            <span class="todo__calendar"></span>
+          </div>
+
+          <button type="submit" class="button button-primary todo--add-item">Add</button>
+        </div>
+      </div>
+
+      <div class="todo__filter-n-sort">
+        <section class="todo__col-1">
+          <label for="todo-filter">Filter</label>
+          <select name="filter" id="todo-filter">
+            <option value="Active">Active</option>
+            <option value="All">All</option>
+            <option value="Completed">Completed</option>
+            <option value="Has due date">Has due date</option>
+          </select>
+        </section>
+
+        <section class="todo__col-1">
+          <label for="todo-sort">Sort</label>
+          <select name="sort" id="todo-sort">
+            <option value="Due date">Due date</option>
+            <option value="Added date">Added date</option>
+          </select>
+          <img src="" alt="" />
+        </section>
+      </div>
+      <div class="item todo__list js-add-item">
+        <div class="item__container">
+          <input type="checkbox" name="" id="" />
+          <div class="item__info">
+            <span class="item__icon"> </span>
+            <span class="item__date-info">
+              <img src="" alt="" />
+              <span class="js-created-date"> </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

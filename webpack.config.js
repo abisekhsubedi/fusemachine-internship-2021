@@ -91,6 +91,10 @@ module.exports = (env) => {
                 filename: 'settings.html',
                 template: './src/templates/settings.html'
             }),
+            new HtmlWebpackPlugin({
+                filename: 'to-do.html',
+                template: './src/templates/to-do.html'
+            }),
             new CopyWebpackPlugin([{
                 from: 'src/templates',
                 to: ''
