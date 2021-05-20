@@ -1,126 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-      <!-- <%=htmlWebpackPlugin.options.title%> -->
+        <!-- <%=htmlWebpackPlugin.options.title%> -->
     </title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
 
-  <body>
+<body>
     <div class="todo">
-      <!-- todo header starts -->
-      <div class="todo__header">
-        <div class="todo__logo">
-          <img src="./images/todo-logo.svg" alt="logo" />
-        </div>
-        <div class="todo__add-cta">
-          <div class="todo__container">
-            <input type="text" class="todo__type-item" placeholder="Add new ..." />
-            <span class="todo__calendar">
-              <img src="./images/calendar-alt 1.svg" alt="" />
-            </span>
-          </div>
+        <!-- todo header starts -->
+        <div class="todo__header">
+            <div class="todo__logo">
+                <img src="./images/todo-logo.svg" alt="logo" />
+            </div>
+            <div class="todo__add-cta">
+                <div class="todo__container">
+                    <input type="text" class="todo__type-item" placeholder="Add new ..." />
+                    <span class="todo__calendar">
+                        <img src="./images/calendar-alt 1.svg" alt="" />
+                    </span>
+                </div>
 
-          <button type="submit" class="todo--add-item">Add</button>
+                <button type="submit" class="todo--add-item">Add</button>
+            </div>
         </div>
-      </div>
-      <!-- todo header ends -->
-      <!-- todo filter starts -->
-      <div class="todo__filter-n-sort">
-        <section class="todo__col-1">
-          <label for="todo-filter">Filter</label>
-          <select name="filter" id="todo-filter">
-            <option value="Active">Active</option>
-            <option value="All">All</option>
-            <option value="Completed">Completed</option>
-            <option value="Has due date">Has due date</option>
-          </select>
-        </section>
+        <!-- todo header ends -->
 
-        <section class="todo__col-1">
-          <label for="todo-sort">Sort</label>
-          <select name="sort" id="todo-sort">
-            <option value="Due date">Due date</option>
-            <option value="Added date">Added date</option>
-          </select>
-          <img src="" alt="" />
-        </section>
-      </div>
-      <!-- todo filter ends -->
-      <!-- todo item list starts-->
-      <div class="item todo__list js-add-item">
-        <div class="item__container">
-          <span
-            ><input type="checkbox" name="" id="item_1" />Buy groceries for next week <label for="item_1"></label
-          ></span>
-          <div class="item__info">
-            <span class="item__icon"> </span>
-            <span class="item__date-info">
-              <img src="" alt="" />
-              <span class="js-created-date"> </span>
-            </span>
-          </div>
+        <!-- todo filter starts -->
+        <div class="todo__filter-n-sort">
+            <section class="todo__col-1">
+                <label for="todo-filter">Filter</label>
+                <select name="filter" id="todo-filter">
+                    <option value="Active">Active</option>
+                    <option value="All">All</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Has due date">Has due date</option>
+                </select>
+            </section>
+
+            <section class="todo__col-1">
+                <label for="todo-sort">Sort</label>
+                <select name="sort" id="todo-sort">
+                    <option value="Due date">Due date</option>
+                    <option value="Added date">Added date</option>
+                </select>
+                <img src="./images/Vector.svg" alt="sort" />
+            </section>
         </div>
-        <!-- item 1 -->
-        <div class="item__container">
-          <span
-            ><input type="checkbox" name="" id="item_1" />Buy groceries for next week <label for="item_1"></label
-          ></span>
-          <div class="item__info">
-            <span class="item__icon"> </span>
-            <span class="item__date-info">
-              <img src="" alt="" />
-              <span class="js-created-date"> </span>
-            </span>
-          </div>
+        <!-- todo filter ends -->
+        <!-- todo item list starts-->
+        <div class="item todo__list js-add-item">
+
+            <!-- item 1 -->
+            <div class="item__container">
+                <label for="item_1">
+                    Buy groceries for next week
+                </label>
+                <input type="checkbox" name="" id="item_1" />
+                <div class="item__info">
+                    <span class="item__icon">
+                        <img src="./images/Vector-1.svg" alt="">
+                        <span class="tooltip-e">
+                            edit todo
+                        </span>
+                        <img src="./images/trash-alt 1.svg" alt="">
+                        <span class="tooltip-del">
+                            delete todo
+                        </span>
+                    </span>
+                    <span class="item__date-info">
+                        <img src="./images/Vec.svg" alt="" />
+                        <span class="tooltip-d">
+                            created date
+                        </span>
+                        <span class="js-created-date">28th jan 2018 </span>
+                    </span>
+                </div>
+            </div>
+            <!-- item 2 -->
+            <div class="item__container">
+                <label for="item_1">
+                    Buy groceries for next week
+                </label>
+                <input type="checkbox" name="" id="item_1" />
+                <div class="item__info">
+                    <span class="item__icon">
+                        <img src="./images/Vector-1.svg" alt="">
+                        <span class="tooltip-e">
+                            edit todo
+                        </span>
+                        <img src="./images/trash-alt 1.svg" alt="">
+                        <span class="tooltip-del">
+                            delete todo
+                        </span>
+                    </span>
+                    <span class="item__date-info">
+                        <img src="./images/Vec.svg" alt="" />
+                        <span class="tooltip-d">
+                            created date
+                        </span>
+                        <span class="js-created-date">28th jan 2018 </span>
+                    </span>
+                </div>
+            </div>
+            <!-- item 3 -->
+            <div class="item__container">
+                <label for="item_1">
+                    Buy groceries for next week
+                </label>
+                <input type="checkbox" name="" id="item_1" />
+                <div class="item__info">
+                    <span class="item__icon">
+                        <img src="./images/Vector-1.svg" alt="">
+                        <span class="tooltip-e">
+                            edit todo
+                        </span>
+                        <img src="./images/trash-alt 1.svg" alt="">
+                        <span class="tooltip-del">
+                            delete todo
+                        </span>
+                    </span>
+                    <span class="item__date-info">
+                        <img src="./images/Vec.svg" alt="" />
+                        <span class="tooltip-d">
+                            created date
+                        </span>
+                        <span class="js-created-date">28th jan 2018 </span>
+                    </span>
+                </div>
+            </div>
+            <!-- item 4 -->
+            <div class="item__container">
+                <label for="item_1">
+                    Buy groceries for next week
+                </label>
+                <input type="checkbox" name="" id="item_1" />
+                <div class="item__info">
+                    <span class="item__icon">
+                        <img src="./images/Vector-1.svg" alt="">
+                        <span class="tooltip-e">
+                            edit todo
+                        </span>
+                        <img src="./images/trash-alt 1.svg" alt="">
+                        <span class="tooltip-del">
+                            delete todo
+                        </span>
+                    </span>
+                    <span class="item__date-info">
+                        <img src="./images/Vec.svg" alt="" />
+                        <span class="tooltip-d">
+                            date created
+                        </span>
+                        <span class="js-created-date">28th jan 2018 </span>
+                    </span>
+                </div>
+            </div>
+            <!-- todo items list starts -->
         </div>
-        <!-- item 2 -->
-        <div class="item__container">
-          <span><input type="checkbox" name="" id="item_2" />Make new type of mech <label for="item_2"></label></span>
-          <div class="item__info">
-            <span class="item__icon"> </span>
-            <span class="item__date-info">
-              <img src="" alt="" />
-              <span class="js-created-date"> </span>
-            </span>
-          </div>
-        </div>
-        <!-- item 3 -->
-        <div class="item__container">
-          <span
-            ><input type="checkbox" name="" id="item_3" />sign up for online course <label for="item_1"></label
-          ></span>
-          <div class="item__info">
-            <span class="item__icon"> </span>
-            <span class="item__date-info">
-              <img src="" alt="" />
-              <span class="js-created-date"> </span>
-            </span>
-          </div>
-        </div>
-        <!-- item 4 -->
-        <div class="item__container">
-          <span
-            ><input type="checkbox" name="" id="item_4" />prepare ingredient for rasbhari <label for="item_1"></label
-          ></span>
-          <div class="item__info">
-            <span class="item__icon"> </span>
-            <span class="item__date-info">
-              <img src="" alt="" />
-              <span class="js-created-date"> </span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <!-- todo items list starts -->
-    </div>
-  </body>
+</body>
+
 </html>
