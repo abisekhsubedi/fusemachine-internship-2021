@@ -1,11 +1,14 @@
-    // body {
-    //     background: white;
-    // }
+    body {
+        background: white;
+    }
 
     label {
         cursor: pointer;
     }
 
+    // ============================
+    // to-do list page start here
+    //==============================
     .todo {
         background: #f8f9fa;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -18,6 +21,8 @@
         margin: 4rem auto;
         max-width: 761px;
 
+        // to-do header part. Include logo and search
+        // button
         &__header {
             width: 100%;
             // outline: 1px solid green;
@@ -28,10 +33,12 @@
             border-bottom: 2px solid rgba(233, 236, 239, 1);
         }
 
+        // logo
         &__logo {
             text-align: center;
         }
 
+        // search bar
         &__add-cta {
             width: 100%;
             display: flex;
@@ -39,11 +46,13 @@
 
         }
 
+        // search input container for styling search bar
         &__container {
             flex: 1 1 100%;
             position: relative;
         }
 
+        // styling search bar
         &__type-item {
             height: 44px;
             width: 100%;
@@ -52,7 +61,7 @@
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.14);
             border-radius: 4px;
 
-
+            // search bar placeholder text
             &::placeholder {
                 font-family: $font;
                 font-size: 14px;
@@ -62,6 +71,7 @@
             }
         }
 
+        // search bar calendar icon
         &__calendar {
             right: calc(65px + 8px);
             top: 50%;
@@ -70,6 +80,7 @@
             cursor: pointer;
         }
 
+        // search bar CTA button
         &--add-item {
             //     display: flex;
             //    transfomr
@@ -91,6 +102,8 @@
             cursor: pointer;
         }
 
+        //to-do filter and sorting dropdown select menu
+
         &__filter-n-sort {
             display: flex;
             width: 100%;
@@ -98,6 +111,7 @@
             align-items: center;
             gap: 16px;
 
+            // styling select elment
             select {
                 width: 120px;
                 border-radius: 4px;
@@ -115,7 +129,7 @@
 
         }
 
-
+        // styling select elements and it's options
         &__col-1,
         &__col-2 {
             display: flex;
@@ -123,15 +137,17 @@
             align-items: center;
             font-size: 12px;
             line-height: 21px;
-            /* identical to box height, or 175% */
 
-
-            /* secondary colour */
 
             color: #95A7BA;
 
         }
 
+        // =================================
+        // to-do list
+        //================================
+
+        // todo list wrapper
         &__list {
             // outline: 1px solid palevioletred;
             display: flex;
@@ -142,8 +158,14 @@
 
         }
 
+        // todo list wrapper, not attached to todo block
         .item {
 
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: flex-start;
+            // items container/wrapper
             &__container {
                 // outline: 1px solid plum;
                 height: 40px;
@@ -165,6 +187,7 @@
                 }
             }
 
+            // todo list info section
             &__info {
                 order: 3;
                 width: 20%;
@@ -177,6 +200,7 @@
                 // visibility: hidden;
             }
 
+            // todo list icons
             &__icon {
                 display: flex;
                 align-items: center;
@@ -188,6 +212,7 @@
 
                 }
 
+                // todo list tooltip, tooltip for edit icon
                 .tooltip-e {
                     padding: 4px;
                     position: absolute;
@@ -217,6 +242,7 @@
 
                 }
 
+                // todo list tooltip, tooltip for delete icon
                 .tooltip-del {
                     padding: 4px;
                     position: absolute;
@@ -249,7 +275,7 @@
 
             }
 
-
+            // todo list created date info
             &__date-info {
                 display: flex;
                 align-items: center;
@@ -300,6 +326,7 @@
 
             }
 
+            // add toggle interaction to to-do list extra info
             input[type="checkbox"] {
                 margin-right: 18px;
                 width: 16px;
@@ -316,6 +343,7 @@
                 }
             }
 
+            // tooltip appear/disappear on hover
             .tooltip-e,
             .tooltip-del,
             .tooltip-d {
@@ -334,6 +362,7 @@
 
     }
 
+    // editable todo list
     .item__container:nth-of-type(4) label {
         padding: 4px 8px;
         background: white;
