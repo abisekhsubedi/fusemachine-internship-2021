@@ -191,8 +191,6 @@
                 .tooltip-e {
                     padding: 4px;
                     position: absolute;
-                    width: fit-content;
-                    height: fit-content;
                     left: -30px;
                     top: 21px;
                     font-size: 10px;
@@ -223,7 +221,6 @@
                     padding: 4px;
                     position: absolute;
                     width: 67px;
-                    height: 31;
                     left: -3px;
                     top: 21px;
                     font-size: 10px;
@@ -250,17 +247,6 @@
 
                 }
 
-                .tooltip-e,
-                .tooltip-del {
-                    opacity: 0;
-                    pointer-events: none;
-                }
-
-                img:hover+.tooltip-e,
-                img:hover+.tooltip-del {
-                    pointer-events: all;
-                    opacity: 1;
-                }
             }
 
 
@@ -278,7 +264,7 @@
                     padding: 4px;
                     position: absolute;
                     width: fit-content;
-                    height: 31;
+                    height: fit-content;
                     left: -28px;
                     top: 21px;
                     font-size: 10px;
